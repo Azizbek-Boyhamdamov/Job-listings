@@ -1,3 +1,12 @@
+/* CUSTOM-PROPS */
+:root{
+  --light-blue-color:#5CA5A5;
+  --main-heading-color:#2B3939;
+  --main-grey-color:#7C8F8F;
+  --main-light-color:#fff;
+  --body-bg-color:#f2f2f2;
+}
+
 /* GLOBAL */
 html{
   box-sizing: border-box;
