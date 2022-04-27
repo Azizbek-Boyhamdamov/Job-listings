@@ -46,8 +46,9 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 700;
   font-family:'League Spartan', "Arial", sans-serif;
   background-color: var(--body-bg-color);
   color: var(--main-grey-color);
@@ -56,6 +57,14 @@ body{
 img{
   max-width: 100%;
   height: auto;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 /* CONTAINER */
@@ -73,6 +82,127 @@ img{
   flex-grow: 1;
 }
 
+.top-decorative-box{
+  height: 156px;
+  background-image: url("../img/Combined-shapes.jpg");
+  margin-bottom: 76px;
+}
+
+/* JOB-LIST */
+
+
+.job-item {
+  margin-bottom: 24px;
+}
+.job-offered-company {
+  display: flex;
+  align-items: center;
+  padding: 32px 40px;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  border-radius: 5px;
+  background-color: var(--main-light-color);
+}
+.job-offered-company__logo-image {
+  display: flex;
+  width: 88px;
+  height: 88px;
+  margin-right: 24px;
+  object-fit: contain;
+}
+.job-offered-company__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.job-offered-company__actions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.job-offered-company__feature{
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--light-blue-color);
+}
+.job-offered-company__feature_blue {
+  margin-left: 16px;
+  margin-right: 8px;
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 14px;
+  color: var(--main-light-color);
+  background-color: var(--light-blue-color);
+  border-radius: 12px;
+}
+.job-offered-company__feature_black {
+  border-radius: 12px;
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 14px;
+  color: var(--main-light-color);
+  background-color: var(--main-heading-color);
+}
+.job-offered-company__needed-specialist {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.job-offered-company__needed-specialist-link {
+  color: var(--main-heading-color);
+  transition: color 0.4s ease;
+}
+
+.job-offered-company__needed-specialist-link:hover{
+  color: var(--light-blue-color);
+}
+
+.job-detailes__list {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.job-detailes__item:not(:last-child)::after{
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 50%;
+  background-color: var(--main-grey-color);
+}
+.job-skills {
+  margin-left: auto;
+}
+.job-skills__list {
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+}
+.job-skills__item:not(:last-child){
+  margin-right: 16px;
+}
+.job-skills__link {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color:  rgba(92, 165, 165,0.1);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--light-blue-color);
+  transition: color 0.4s ease,
+    background-color 0.4s ease;
+}
+
+.job-skills__link:hover{
+  background-color:var(--light-blue-color) ;
+  color: var(--main-light-color);
+}
+
+
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -82,4 +212,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
+.top-decorative-box{
+  background-image: url("../img/Combined-shapes.jpg");
+}
 }
